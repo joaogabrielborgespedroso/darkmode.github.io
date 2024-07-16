@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    ;
+}
+
+html,
+body {
+    height: 100%;
+    background: #B0E0E6;
+    transition: 0.3s;
+    margin-bottom: 200px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.bi {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.bi-moon {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B0E0E6;
+    box-shadow: 0.5px 0.5px 10px 0.5px black;
+    padding: 1rem 2rem;
+    position: relative;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    margin-top: 4rem;
+    display: flex;
+    width: 60%;
+    background-color: #87CEFA;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+.card-image,
+.card-details {
+    padding: 2rem;
+    width: 50%;
+}
+
+.card-image {
+    padding: 2rem;
+    width: 50%;
+    position: relative;
+    background-color: #00bfff;
+    border-radius: 10px;
+}
+
+.card-image span {
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: aliceblue;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.card img {
+    width: 120%;
+    transform: rotate(+10deg);
+    position: absolute;
+    right: -1rem;
+    top: -1rem;
+}
+
+.card-details h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.description {
+    line-height: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.btn {
+    width: 7rem;
+    height: 3rem;
+    background-color: #444;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    transition: .3s ease-in-out;
+}
+
+/*Dark Theme */
+
+.dark,
+.dark header {
+    background-color: #263238;
+    color: #fff;
+}
+
+.dark .bi-sun {
+    display: none;
+}
+
+.dark .bi-moon {
+    display: block;
+}
+
+.dark .card {
+    background-color: #37474f;
+}
+
+.dark .card-image {
+    background-color: #273035;
+}
+
+.dark .card-image span {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+.dark .subtitle {
+    color: #000000;
+}
